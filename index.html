@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Link Selector</title>
+    <script>
+        function getRandomLink() {
+            // List of URLs
+            const links = [
+                "https://www.phoenix666777.com/register?invite_code=00C9911678855",
+                "https://www.phoenix666777.com/register?invite_code=6BE2943066661",
+                "https://www.phoenix666777.com/register?invite_code=424969702592",
+                "https://www.phoenix666777.com/register?invite_code=FBC8A14949990",
+                "https://www.phoenix666777.com/register?invite_code=B4D3429524921",
+                "https://www.phoenix666777.com/register?invite_code=C557D87286030",
+                "https://www.phoenix666777.com/register?invite_code=6F18839284597",
+                "https://www.phoenix666777.com/register?invite_code=418F029068196",
+                "https://www.phoenix666777.com/register?invite_code=D8BA929979645",
+                "https://www.phoenix666777.com/register?invite_code=9B72754681800",
+                "https://www.phoenix666777.com/register?invite_code=60EF382809426",
+                "https://www.phoenix666777.com/register?invite_code=6CD1629360591",
+                "https://www.phoenix666777.com/register?invite_code=4F3D56918416",
+                "https://www.phoenix666777.com/register?invite_code=EB8D935046390",
+                "https://www.phoenix666777.com/register?invite_code=9130C96115438",
+                "https://www.phoenix666777.com/register?invite_code=D855C49341334",
+                "https://www.phoenix666777.com/register?invite_code=2816257387573",
+                "https://www.phoenix666777.com/register?invite_code=5243B22499609",
+                "https://www.phoenix666777.com/register?invite_code=19A4879520430",
+                "https://www.phoenix666777.com/register?invite_code=A8C9180748589",
+                "https://www.phoenix666777.com/register?invite_code=A91C560214038",
+                "https://www.phoenix666777.com/register?invite_code=0EF6E54833007",
+                "https://www.phoenix666777.com/register?invite_code=DF62D92579595",
+                "https://www.phoenix666777.com/register?invite_code=0A33B999890014"
+            ];
+
+            // Select a random index
+            const randomIndex = Math.floor(Math.random() * links.length);
+            // Redirect to the selected URL
+            window.location.href = links[randomIndex];
+        }
+
+        // Call the function when the page loads
+        window.onload = getRandomLink;
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, <a href="#" onclick="getRandomLink(); return false;">click here</a>.</p>
+</body>
+</html>
